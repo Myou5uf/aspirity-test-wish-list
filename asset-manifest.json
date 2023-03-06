@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/aspirity-test-wish-list/static/css/main.1cb4f594.css",
+    "main.js": "/aspirity-test-wish-list/static/js/main.7f95614e.js",
+    "index.html": "/aspirity-test-wish-list/index.html",
+    "main.1cb4f594.css.map": "/aspirity-test-wish-list/static/css/main.1cb4f594.css.map",
+    "main.7f95614e.js.map": "/aspirity-test-wish-list/static/js/main.7f95614e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cb4f594.css",
+    "static/js/main.7f95614e.js"
+  ]
+}
