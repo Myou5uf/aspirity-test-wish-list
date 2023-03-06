@@ -1,0 +1,20 @@
+.wishList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .wishList {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .wishList {
+        justify-content: center;
+        flex-direction: column;
+    }
+}

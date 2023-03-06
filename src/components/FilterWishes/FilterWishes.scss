@@ -1,0 +1,66 @@
+@import 'src/style/variables';
+
+.filterWishes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+
+    &__btn {
+        background: $light;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        padding: 0.5rem 1.2rem;
+        font-weight: 600;
+        transition: 0.2s transform;
+        text-transform: capitalize;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &_active {
+            background: $green;
+            color: #fff;
+            box-shadow: 0 0 20px $green;
+        }
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .filterWishes {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        overflow-x: scroll;
+        white-space: nowrap;
+        text-align: center;
+
+        &::-webkit-scrollbar {
+            height: 3px;
+            border-radius: 7px;
+            background-color: $primary;
+        }
+
+        &::-webkit-scrollbar-track {
+            height: 3px;
+            border-radius: 7px;
+            background-color: $dark;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            height: 3px;
+            border-radius: 7px;
+            background-color: $primary;
+        }
+    }
+}
+
+

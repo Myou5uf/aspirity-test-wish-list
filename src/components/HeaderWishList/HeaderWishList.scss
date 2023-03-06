@@ -1,0 +1,55 @@
+@import 'src/style/variables';
+
+.headerWishList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+    &__rect {
+        height: 30px;
+        border-right: 3px solid $dark;
+        color: red;
+        margin: 0 2rem;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__clearWishList-btn {
+        margin-left: 20px;
+        padding: 0.6rem;
+        border: none;
+        background: radial-gradient(circle, rgba(180, 182, 218, 0.9) 0, rgba(226, 236, 253, 0.9) 100%);
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 10px;
+        text-transform: uppercase;
+        transition: 0.2s transform;
+        color: $primary;
+        box-shadow: 0 0 20px $primary;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .headerWishList {
+        flex-direction: column;
+
+        &__rect {
+            height: 0;
+            width: 30px;
+            border-right: none;
+            border-top: 3px solid $dark;
+            margin: 1.5rem 0;
+        }
+    }
+}
+

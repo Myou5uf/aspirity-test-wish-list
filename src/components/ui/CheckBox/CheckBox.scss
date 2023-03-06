@@ -1,0 +1,36 @@
+@import 'src/style/variables';
+
+.checkBox {
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.15em;
+    margin-right: 0.5em;
+    border: 0.15em solid $dark;
+    outline: none;
+    cursor: pointer;
+
+    &_checked {
+        background-color: $green;
+        position: relative;
+        box-shadow: 0 0 20px $green;
+
+        &:before {
+            content: "\2714";
+            font-size: 1.7em;
+            color: #fff;
+            position: absolute;
+            right: 5px;
+            top: -2px;
+        }
+    }
+
+    &:disabled {
+        border-color: #c0c0c0;
+        background-color: #c0c0c0;
+    }
+
+    &:focus, &:hover {
+        box-shadow: 0 0 20px $green;
+    }
+}

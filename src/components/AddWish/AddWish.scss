@@ -1,0 +1,56 @@
+@import "src/style/variables";
+.addWish {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__input {
+        background-color: #e1ebfd;
+        border: none;
+        border-radius: 5px;
+        max-height: 2.5rem;
+        min-width: 15rem;
+        padding: 0.5rem 1rem;
+
+        &:focus {
+            border: 2px solid $dark;
+            outline: none;
+        }
+    }
+
+    &__btn {
+        align-items: center;
+        background-color: $dark;
+        border: 2px solid #e1ebfd;
+        border-radius: 50%;
+        box-shadow: 2px 4px 10px $dark;
+        color: #e1ebfd;
+        cursor: pointer;
+        display: flex;
+        font-size: 1.5rem;
+        height: 3.2rem;
+        justify-content: center;
+        margin-left: 1rem;
+        width: 3.2rem;
+        transition: 0.2s transform;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .addWish {
+
+        &__input {
+            min-width: 13rem;
+        }
+
+        &__btn {
+            height: 2rem;
+            width: 3rem;
+        }
+    }
+}
+

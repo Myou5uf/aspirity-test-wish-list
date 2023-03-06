@@ -1,0 +1,26 @@
+@import 'src/style/variables';
+
+
+.toolTip {
+
+    &-container {
+        display: flex;
+        position: relative;
+    }
+
+    &-content {
+        position: absolute;
+        z-index: 999;
+        width: 180px;
+        padding: 4px 12px;
+        margin-left: calc(120%);
+        justify-content: center;
+        color: #fff;
+        background-color: $dark;
+        border-radius: 12px ;
+        text-align: center;
+        white-space: pre-line;
+        pointer-events: none;
+        font-size: 0.8rem;
+    }
+}
