@@ -43,6 +43,14 @@
         white-space: nowrap;
         text-align: center;
 
+
+        &__btn {
+
+            &:first-child {
+                margin-left: 10px;
+            }
+        }
+
         &::-webkit-scrollbar {
             height: 3px;
             border-radius: 7px;

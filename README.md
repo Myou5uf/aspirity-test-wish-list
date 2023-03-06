@@ -13,7 +13,8 @@
 - Фильтрация списка;
 - Очистить список желаний;
 - Drag and Drop;
-- Сохранение списка в Local Storage.
+- Сохранение списка в Local Storage;
+- Адаптивная верстка для телефона, планшета и десктопа.
 
 ## Инструменты
 
@@ -27,3 +28,6 @@
 
 -   `npm install`
 -   `npm run start`
+
+
+Открыть в браузере [https://myou5uf.github.io/aspirity-test-wish-list/](https://myou5uf.github.io/aspirity-test-wish-list/)
